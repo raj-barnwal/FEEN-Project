@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Basket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scriptFile.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><img src="to_the_new.jpg" alt="ToTheNew Logo" id="imglogo" class="img-responsive"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><h2>Your Basket</h2></div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>Items you have added to your basket are shown below.<br/>
+                Adjust the quantities or remove items before continuing your purchase.</p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row" id="description">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <table cellpadding="10px" cellspacing="10px">
+                <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Cost</th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cotton T-Shirt, Medium</td>
+                    <td class="price">1.99</td>
+                    <td>
+                        <input type="number" value="0" min="0" class="qty">
+                    </td>
+                    <td class="addAmount"></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td>Baseball Cap, One Size</td>
+                    <td class="price">2.99</td>
+                    <td>
+                        <input type="number" value="0" min="0" class="qty">
+                    </td>
+                    <td class="addAmount"></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td>Swim Shorts, Medium</td>
+                    <td class="price">3.99</td>
+                    <td>
+                        <input type="number" value="0" min="0" class="qty">
+                    </td>
+                    <td class="addAmount"></td>
+                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <br/>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">Subtotal</div>
+        <div class="col-md-3" id="subTotal"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">VAT @20%</div>
+        <div class="col-md-3" id="vatAmount"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <br/>
+    <div class="row" style="font-weight: bold">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">Total Cost</div>
+        <div class="col-md-3" id="tatalCost"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-3">
+            <button type="button" id="buybtn">Buy Now >></button>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+    <br/>
+
+    <div class="row footer">
+
+        <div class="col-md-12">&copy;2017 ToTheNew</div>
+
+    </div>
+</div>
+</body>
+</html>
