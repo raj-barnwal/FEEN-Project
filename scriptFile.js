@@ -9,7 +9,8 @@ $(document).ready(function () {
 
     /*Cost corresponding price and quantity */
     var cost = 0;
-    $(".qty").on('change', function () {
+
+    function changeQuantity() {
         $(".qty").each(function () {
             var quantity = this.value;
             var price = parseFloat(this.closest("tr").children[1].innerText);
@@ -18,7 +19,23 @@ $(document).ready(function () {
             calculateAmount();
         });
 
-    });
+    }
+    /*Quantity increment*/
+    $('.increment').click(function () {
+        var element = this.closest("tr span").children[0];
+        element.value = parseInt(element.value) + 1;
+        changeQuantity();
+    })
+
+    /*Quantity decrement*/
+    $('.decrement').click(function () {
+        var element = this.closest("tr span").children[0];
+        element.value = parseInt(element.value) - 1;
+        if (element.value < 0) {
+            element.value = 0;
+        }
+        changeQuantity();
+    })
 
     function calculateAmount() {
         /*Subtotal*/
@@ -43,7 +60,6 @@ $(document).ready(function () {
         $('#tatalCost').html(totalcost.toFixed(2));
 
     }
-
 })
 
 

@@ -12,19 +12,13 @@ h2 {
     font-weight: bold;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-
-    opacity: 1;
-}
-
 span {
     color: midnightblue;
 }
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 70%;
 }
 
 td, th {
@@ -45,9 +39,31 @@ tr:hover {
     cursor: pointer;
 }
 
+
 input {
-    width: 3em;
-    text-align: right;
+    width: 2em;
+    text-align:center;
+    height: 30px;
+}
+
+.btnchange{
+    background-color:gray;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    font-weight: bold;
+    display: block;
+    height: 15px;
+    width: 12px;
+}
+.inputbtn {
+    display:inline-block;
+    vertical-align:top;
+}
+
+.somespace{
+    padding-left:50px;
 }
 
 .footer {
@@ -55,6 +71,7 @@ input {
     padding: 5px;
     text-align: center;
     color: white;
+    font-size: smaller;
 
 }
 

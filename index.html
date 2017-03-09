@@ -49,7 +49,13 @@
                     <td>Cotton T-Shirt, Medium</td>
                     <td class="price">1.99</td>
                     <td>
-                        <input type="number" value="0" min="0" class="qty">
+                        <span>
+                       <input type="text" value="0" class="qty">
+                        <div class="inputbtn">
+                        <button type="button" class="increment btnchange">+</button>
+                        <button type="button" class="decrement btnchange decrementbtn">-</button>
+                        </div>
+                        </span>
                     </td>
                     <td class="addAmount"></td>
                     <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
@@ -59,7 +65,13 @@
                     <td>Baseball Cap, One Size</td>
                     <td class="price">2.99</td>
                     <td>
-                        <input type="number" value="0" min="0" class="qty">
+                        <span>
+                       <input type="text" value="0" class="qty">
+                        <div class="inputbtn">
+                        <button type="button" class="increment btnchange">+</button>
+                        <button type="button" class="decrement btnchange decrementbtn">-</button>
+                        </div>
+                        </span>
                     </td>
                     <td class="addAmount"></td>
                     <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
@@ -69,7 +81,13 @@
                     <td>Swim Shorts, Medium</td>
                     <td class="price">3.99</td>
                     <td>
-                        <input type="number" value="0" min="0" class="qty">
+                        <span>
+                       <input type="text" value="0" class="qty">
+                        <div class="inputbtn">
+                        <button type="button" class="increment btnchange">+</button>
+                        <button type="button" class="decrement btnchange decrementbtn">-</button>
+                        </div>
+                        </span>
                     </td>
                     <td class="addAmount"></td>
                     <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
@@ -84,27 +102,27 @@
     <br/>
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-5">Subtotal</div>
-        <div class="col-md-3" id="subTotal"></div>
+        <div class="col-md-4">Subtotal</div>
+        <div class="col-md-4 somespace" id="subTotal"></div>
         <div class="col-md-2"></div>
     </div>
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-5">VAT @20%</div>
-        <div class="col-md-3" id="vatAmount"></div>
+        <div class="col-md-4">VAT @20%</div>
+        <div class="col-md-4 somespace" id="vatAmount"></div>
         <div class="col-md-2"></div>
     </div>
     <br/>
     <div class="row" style="font-weight: bold">
         <div class="col-md-2"></div>
-        <div class="col-md-5">Total Cost</div>
-        <div class="col-md-3" id="tatalCost"></div>
+        <div class="col-md-4">Total Cost</div>
+        <div class="col-md-4 somespace" id="tatalCost"></div>
         <div class="col-md-2"></div>
     </div>
     <br/>
     <div class="row">
-        <div class="col-md-7"></div>
-        <div class="col-md-3">
+        <div class="col-md-5"></div>
+        <div class="col-md-5" style="padding-left: 60px;">
             <button type="button" id="buybtn">Buy Now >></button>
         </div>
         <div class="col-md-2"></div>
@@ -113,9 +131,7 @@
     <br/>
 
     <div class="row footer">
-
         <div class="col-md-12">&copy;2017 ToTheNew</div>
-
     </div>
 </div>
 </body>
